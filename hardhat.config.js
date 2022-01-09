@@ -7,9 +7,11 @@ module.exports = {
     },
     mumbai: {
       url: `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: [`${process.env.METAMASK_PRIVATE_KEY}`],
     },
     mainnet: {
       url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: [`${process.env.METAMASK_PRIVATE_KEY}`],
     },
   },
   solidity: "0.8.4",
