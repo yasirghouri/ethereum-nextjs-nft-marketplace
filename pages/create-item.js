@@ -20,8 +20,6 @@ export default function CreateItem() {
   });
   const router = useRouter();
 
-  console.log("FILE URL", fileUrl);
-
   async function onChange(e) {
     const file = e.target.files[0];
     try {
@@ -99,7 +97,7 @@ export default function CreateItem() {
           }
         />
         <input
-          placeholder="Asset Price in Eth"
+          placeholder="Asset Price in ETH"
           className="mt-2 border rounded p-4"
           onChange={(e) =>
             updateFormInput({ ...formInput, price: e.target.value })
