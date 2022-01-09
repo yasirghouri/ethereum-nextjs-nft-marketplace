@@ -10,7 +10,6 @@ module.exports = {
     },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${infuraProjectId}`,
-      // accounts: [`${process.env.METAMASK_PRIVATE_KEY}`],
       accounts: [privateKey],
     },
     // mumbai: {
